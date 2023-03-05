@@ -1,0 +1,109 @@
+.types{
+    padding-top: 112px;
+    padding-bottom: 94px;
+
+    &__row{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left{
+
+        h2{
+            width: 480px;
+            margin-bottom: 18px;
+        }
+    
+        p{
+            display: inline-block;
+            width: 480px;
+            margin-bottom: 80px;
+    
+            font-size: 14px;
+        }
+    }
+
+
+    .btn-yellow{
+        display: block;
+    }
+
+    &__right{
+        display: flex;
+        
+        
+        &-columns{
+            position: relative;
+            height: 145px;
+            padding-left: 25px;
+            padding-top: 15px;
+            
+            // border-left: 1px solid rgba(23, 23, 21, 0.3);
+            
+            b{
+                font-size: 14px;
+            }
+            
+            .types__right-blocks::before{
+                content: " ";
+                width: 1px;
+                position: absolute;
+                top: -17px;
+                right: 90px;
+                bottom: -18px;
+                background-color: rgba(23, 23, 21, 0.3);
+            }
+            
+            .types__right-blocks::after{
+                position: absolute;
+                width: 7px;
+                height: 7px;
+                
+                top: 11px;
+                right: 87px;
+    
+                content: " ";
+                
+                background-color: #FFD124;
+                border-radius: 50%;
+            }
+        }
+        
+        &-columns:first-child{
+            height: 320px;
+            
+            .types__right-blocks::before{
+                content: " ";
+                width: 1px;
+                position: absolute;
+                top: -17px;
+                right: 343px;
+                bottom: -18px;
+                background-color: rgba(23, 23, 21, 0.3);
+            }
+
+            .types__right-blocks::after{
+                position: absolute;
+                width: 7px;
+                height: 7px;
+                
+                top: 11px;
+                right: 341px;
+    
+                content: " ";
+    
+                background-color: #FFD124;
+                border-radius: 50%;
+            }
+        }
+        
+        &-blocks{
+            position: relative;
+            margin-bottom: 16px;
+        }
+
+        &-blocks:last-child{
+            margin-bottom: 0;
+        }   
+    }
+}

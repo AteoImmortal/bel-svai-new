@@ -1,0 +1,56 @@
+.process-work{
+    padding-top: 112px;
+    padding-bottom: 112px;
+
+    background-color: #4C4B4A;
+
+    h2{
+        padding-bottom: 18px;
+        color: #FFD124;
+    }
+
+    p{
+        font-size: 14px;
+        color: #fff;
+    }
+
+    &__content{
+        padding-top: 159px;
+
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 15px;
+        row-gap: 174px;
+    }
+
+    &__blocks{
+        width: 380px;
+
+        h2{
+            position: absolute;
+            top: -120px;
+            right: -10px;
+            z-index: 0;
+
+            font-size: 160px;
+            line-height: 140%;
+
+            text-transform: uppercase;
+
+            color: rgba(121, 121, 121, 0.1);
+        }
+
+        b{
+            display: block;
+            position: relative;
+            z-index: 1;
+
+            color: #FFD124;
+        }
+
+        p{
+            position: relative;
+            z-index: 1;
+        }
+    }
+}

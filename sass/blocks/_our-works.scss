@@ -1,0 +1,75 @@
+.our-works{
+    padding-top: 86px;
+    padding-bottom: 112px;
+
+    position: relative;
+
+    &__row{
+        margin-top: 20px;
+        margin-bottom: 105px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p{
+            display: block;
+            width: 282px;
+
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.6;
+
+            color: #171715;
+        }
+    }
+
+    .bel-svai{
+        z-index: -1;
+        
+        position: absolute;
+        top: 100px;
+        right: 0;
+    }
+
+    &__card-list{
+        display: flex;
+        flex-wrap: wrap;
+
+        column-gap: 25px;
+        row-gap: 80px;
+    }
+
+    &__card{
+        width: 570px;
+        min-height: 420px;
+        
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+        border-radius: 8px;
+        &-text{ 
+            margin: 20px 20px 0 20px;
+
+            display: flex;
+            justify-content: space-between;
+
+            p{
+                display: block;
+
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 1.4;
+            }
+
+            .data{
+                display: block;
+
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 1.6;
+
+                opacity: 0.3;
+            }
+        }
+    }
+
+}

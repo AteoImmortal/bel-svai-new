@@ -1,0 +1,138 @@
+.questions{
+    padding-top: 112px;
+    padding-bottom: 50px;
+
+    background: linear-gradient(277.65deg, #41413D 26.55%, rgba(65, 65, 61, 0) 64.74%), linear-gradient(0deg, rgba(65, 65, 61, 0.85), rgba(65, 65, 61, 0.85)), url(../../img/questions/fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left-block-up{
+        h2{
+            text-transform: uppercase;
+
+            color: #FFD124
+        }
+
+        p{
+            width: 480px;
+            margin-top: 20px;
+            margin-bottom: 110px;
+
+            display: block;
+
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.6;
+            
+            color: #FFFFFF;
+        }
+    }
+
+    &__left-block-down{
+
+        color: #FFFFFF;
+        .connection{
+            margin-top: 8px;
+
+            text-align: left;
+
+            p{
+                margin-top: 5px;
+                margin-left: 22px;
+                
+                display: block;
+
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.4;
+
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+
+        .connect{
+
+            a{
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    &__tabs{
+        width: 600px;
+        padding-bottom: 12px;
+
+        display: flex;
+        border-bottom: 1px solid #FFD124;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.6;
+
+        color: #FFFFFF;
+
+        .questions__first-text{
+            width: 510px;
+            
+            display: block;
+
+        }
+        
+        p:first-child{
+            width: 515px;
+            margin-bottom: 10px;
+
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+
+
+        button{
+            margin-left: auto;
+
+            .plus{
+                display: block;
+            }
+
+            .minus{
+                display: none;
+            }
+        }
+
+        button.active{
+            .plus{
+                display: none;
+            }
+
+            .minus{
+                display: block;
+            }
+        }
+
+        &-block{
+            width: 510px;
+            
+            display: none;
+
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.4;
+
+        }
+        .active{
+            display: block;
+        }
+    }
+
+    &__tabs:not(:first-child){
+        margin-top: 72px;
+    }
+}

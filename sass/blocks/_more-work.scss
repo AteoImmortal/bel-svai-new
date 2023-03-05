@@ -1,0 +1,25 @@
+.more-work{
+    padding-top: 112px;
+    padding-bottom: 123px;
+
+    background: linear-gradient(0deg, rgba(76, 75, 74, 0.9), rgba(76, 75, 74, 0.9)), url(../../img/more-work/fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    h2{
+        color: #FFD124;
+    }
+
+    &__row{
+        margin-top: 20px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p{
+            color: #FFFFFF;
+        }
+    }
+}
