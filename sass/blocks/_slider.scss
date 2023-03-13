@@ -1,0 +1,50 @@
+.slider{
+    margin-left: auto;
+    margin-right: auto;
+    
+    height: 178px;
+    width: 1440px;
+    
+    overflow: hidden;
+    
+    &__photo{
+        height: 178px;
+        width: 2880px;
+
+        display: flex;
+        position: relative;
+
+        left: 0;
+        transition: all ease 1s;
+    }
+
+    &__left{
+        z-index: 1;
+        position: absolute;
+        top: 64px;
+        left: 60px;
+    }
+    
+    &__right{
+        z-index: 1;
+        position: absolute;
+        top: 64px;
+        right: 60px;
+    }
+}
+
+// .slider{
+//     
+
+
+//     &__photo{
+//         margin-left: auto;
+//         margin-right: auto;
+
+//         display: flex;
+//     }
+
+//     &__item{
+//         z-index: 0;
+//     }
+// }

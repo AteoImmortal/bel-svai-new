@@ -545,33 +545,6 @@ h4 {
   margin-bottom: 0;
 }
 
-.slider {
-  display: -webkit-box;
-  display: flex;
-  position: relative;
-}
-.slider__left {
-  z-index: 1;
-  position: absolute;
-  top: 65px;
-  left: 60px;
-}
-.slider__right {
-  z-index: 1;
-  position: absolute;
-  top: 65px;
-  right: 60px;
-}
-.slider__photo {
-  margin-left: auto;
-  margin-right: auto;
-  display: -webkit-box;
-  display: flex;
-}
-.slider__item {
-  z-index: 0;
-}
-
 .dignities {
   padding-top: 112px;
   padding-bottom: 112px;
@@ -1124,6 +1097,35 @@ h4 {
 }
 .additional .questions__tabs:not(:first-child) {
   margin-top: 72px;
+}
+
+.slider {
+  margin-left: auto;
+  margin-right: auto;
+  height: 178px;
+  width: 1440px;
+  overflow: hidden;
+}
+.slider__photo {
+  height: 178px;
+  width: 2880px;
+  display: -webkit-box;
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+}
+.slider__left {
+  z-index: 1;
+  position: absolute;
+  top: 64px;
+  left: 60px;
+}
+.slider__right {
+  z-index: 1;
+  position: absolute;
+  top: 64px;
+  right: 60px;
 }
 
 /*# sourceMappingURL=main.css.map */
