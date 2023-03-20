@@ -225,61 +225,51 @@
         </section>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact " id="contact">
         <section class="container">
-            
             <section class="contact__row">
-                <section class="contact__right">
-
-                    <form action="./mail.php" method="post" id="form" class="contact__application">
-                        <p>Заполните форму и наш менеджер свяжется<br>с вами в ближайшее время</p>
-                        
-                        <input type="text" name="user_name" class="input__name _req" type="text" placeholder="Ваше имя" required>
-                        <input type="text" name="user_phone" class="input__name _req" type="tel" placeholder="Телефон" required>
-    
-                        <button type="submit" class="btn-yellow">оставить заявку</button>
-    
-                        <label class="checkbox">
-                            <input type="checkbox" class="checkbox__real _req">
-                            <section class="checkbox__fake"></section>
-                            <section class="checkbox__text">
-                                <p>Даю согласие на законную обработку персональных данных. <b>Правила обработки персональных данных</b></p>
-                            </section>
-                        </label>
-                    </form>
-                </section>
-
-                <section class="contact__content">
+                <section class="contact__left">
                     <h2>Контакты</h2>
                     <p>Работаем с 8:00 до 20.00</p>
-    
-                    <section class="contact__bottom">
+
+                    <section class="contact__connect">
                         <article class="connection">
-                            <p>Телефон:</p>
                             <section class="connect">
                                 <img src="./img/svg/phone-black.svg" alt="phone">
                                 <a href="tel:+375295186927">+375 (29) 518 69 27</a>
                             </section>
                         </article>
-                        <article class="connection">
-                            <p>E-mail:</p>
-                            <section class="connect">
-                                <img src="./img/svg/mail.svg" alt="mail">
-                                <a href="mailto:info@bel-svai.by">info@bel-svai.by</a>
-                            </section>
-                        </article>
-                        <article class="connection">
-                            <p>Skype:</p>
-                            <section class="connect">
-                                <img src="./img/svg/skype.svg" alt="skype">
-                                <a href="skype:bel-svai.by">bel-svai.by</a>
-                            </section>
-                        </article>
+                        <section class="connect">
+                            <img src="./img/svg/mail.svg" alt="mail">
+                            <a href="mailto:info@bel-svai.by">info@bel-svai.by</a>
+                        </section>
+                        <section class="connect">
+                            <img src="./img/svg/skype.svg" alt="skype">
+                            <a href="skype:bel-svai.by">bel-svai.by</a>
+                        </section>
                     </section>
                 </section>
+                
+                <section class="contact__right">
+                    <form action="./mail.php" method="post" id="form" class="contact__application">
+                        <h4>Оставить заявку<br>на расчет стоимости</h4>
+                        <p>Заполните форму и наш менеджер свяжется<br>с вами в ближайшее время</p>
+                        
+                        <input type="text" name="user_name" class="input__name _req" type="text" placeholder="Ваше имя" required>
+                        <input type="text" name="user_phone" class="input__name _req" type="tel" placeholder="Телефон" required>
+            
+                        <button type="submit" class="btn-yellow">оставить заявку</button>
+            
+                        <section class="checkbox">
+                            <input class="checkbox__real" type="checkbox" id="model">
+                            <label for="model" class="checkbox__text">
+                                <p>Даю согласие на законную обработку персональных данных. <b>Правила обработки персональных данных</b></p>
+                            </label>
+                        </section>
+                    </form>
+                </section>
+                
             </section>
-
-
         </section>
     </section>
 
@@ -299,7 +289,7 @@
                     <li><a href="./index.html">Главная</a></li>
                 <li><a href="./index.html#about-us">О нас</a></li>
                 <li><a href="./our-works.html">Наши работы</a></li>
-                <li class="nav__item nav__item--active"><a href="./useful-information.html">Полезная информация</a></li>
+                <li class="nav__item nav__item"><a href="./useful-information.html">Полезная информация</a></li>
                 <li><a href="#contact">Контакты</a></li>
                 </ul>
             </section>

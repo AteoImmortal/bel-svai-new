@@ -49,6 +49,21 @@ section {
     }
 }
 
+#overlay.active{
+    display: block;
+}
+
+#overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 11;
+    background: rgba(37, 73, 116, 0.8);
+}
+
 /* Utility */
 
 .none {

@@ -1,16 +1,19 @@
 .header{
+    padding-top: 74px;
+    padding-bottom: 80px;
+
+    position: relative;
     z-index: 5;
     
     background-color: #fff;
 
     img{
         margin-left: auto;
-        margin-top: -470px;
+        margin-bottom: -666px;
     }
     .container{
         h1{
             display: block;
-            padding-top: 74px;
             margin-bottom: 30px;
         }
 
@@ -34,16 +37,12 @@
     }
 }
     .btn-yellow{
-        padding: 16px 32px;
-
-        background: #FFD124;
-        border-radius: 4px;
+        margin-top: 40px;
 
         position: relative;
         display: inline-block;
         cursor: pointer;
         outline: none;
-        border: 0;
         vertical-align: middle;
         text-decoration: none;
         font-size: inherit;
@@ -56,7 +55,6 @@
         background: #FFD124;
         border: 2px solid #b18597;
         border-radius: 0.75em;
-        transition: transform 0.15s;
         transform-style: preserve-3d;
     }
 

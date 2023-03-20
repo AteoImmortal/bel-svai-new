@@ -28,9 +28,32 @@
 
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
         border-radius: 8px;
+        background-color: #ffff;
 
-        h4{
-            margin-bottom: 31px;
+        h3{
+            display: block;
+            margin-bottom: 18px;
+
+            text-transform: uppercase;
+        }
+
+        &--hidden{
+            position: fixed;
+            padding-top: 40px;
+            margin: auto;
+
+            z-index: 12;
+            top: -100%;
+            left: calc( 50% - 196px);
+            transition: 0.7s all;
+        }
+        
+        &--active{
+            top: 100px;
+            left: calc( 50% - 196px);
+            
+            z-index: 12;
+            transition: 0.7s all;
         }
     }
 
@@ -38,9 +61,15 @@
 
         p:not(.checkbox__text p){
             display: block;
+            margin-bottom: 17px;
+            
+            font-weight: 500;
             font-size: 12px;
-
+            line-height: 1.6;
+            
             text-align: center;
+                        
+            color: #171715;
         }
 
         .input__name{
@@ -75,48 +104,16 @@
         }
 
         .checkbox {
+            margin-top: 16px;
+
             display: flex;
-        }
-
-        .checkbox__real {
-            display: none;
-        }
-
-        .checkbox__fake {
-            position: relative;
-            margin-right: 10px;
-            width: 11px;
-            height: 11px;
-            border: 0.8px solid rgba(76, 75, 74, 0.6);
-            border-radius: 2px;
-
-            background-color: rgba(140, 140, 140, 0.6);
-          }
-
-        .checkbox__fake:before {
-            content: "";
-            display: block;
-            position: absolute;
-            left: 0px;
-            top: 10px;
-            width: 12px;
-            height: 12px;
-            background-image: url("../../img/svg/check.svg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-          }
-        .checkbox__real:checked + .checkbox__fake::before {
-            width: 10px;
-            height: 10px;
-            top: 0;
-            left: 0;
+            align-items: center;
         }
 
 
         .checkbox__text {
             width: 283px;
-
+            margin-left: 12px;
 
             font-size: 10px;
             line-height: 1.2;
@@ -125,6 +122,15 @@
             b{
                 color: #FFD124;
             }
+        }
+
+        .close{
+            position: absolute;
+            top: -15px;
+            right: 15px;
+
+            transform: rotate(45deg);
+            font-size: 45px;
         }
     }
 
@@ -152,4 +158,14 @@
         } 
 
     }
+
+    &__tel{
+        margin-top: 40px;
+        margin-bottom: 9px;
+    }
+
+}
+
+a.tel{
+    border-bottom: 2px solid #FFD124;
 }

@@ -11,8 +11,7 @@ document.querySelectorAll('label.checkbox-block input[type="checkbox"]').forEach
 
 
 // Табы
-const tabs = document.querySelectorAll('[data-control="tab-questions"]');
-tabs.forEach(function(tab) {
+document.querySelectorAll('[data-control="tab-questions"]').forEach(function(tab) {
     const tabBlocks = tab.querySelectorAll('[data-control="tabs-block"]');
     const tabButtons = tab.querySelectorAll('[data-control="questions__tab"]');
 
@@ -55,16 +54,16 @@ tabs.forEach(function(tab) {
 
 
 // Анимация кнопки
-let passwordStatys=false;
-function sendPassword(){
+(function (){
+    let passwordStatys=false;
     if (!passwordStatys){
         document.querySelector(".btn-yellow").style.animation="swing 0.5s ease";   
     }
-}
-sendPassword()
+});
+
 
 // Слайдер
-function slider(){
+(function (){
     let offset = 0;
     const sliderPhoto = document.querySelector('.slider__photo');
 
@@ -87,5 +86,22 @@ function slider(){
 
         sliderPhoto.style.left = -offset + 'px';
     })
-}
-slider()
+});
+
+
+// Сделать заказ
+const openWindow = document.querySelector('.open-window');
+const makeOrder = document.querySelector('.contact__right--hidden');
+const overlay = document.querySelector('#overlay');
+
+openWindow.addEventListener('click', function () {
+    makeOrder.classList.toggle('contact__right--active');
+    overlay.classList.toggle('active');
+})
+
+const closeWindow = document.querySelector('.close');
+
+closeWindow.addEventListener('click', function (){
+        makeOrder.classList.remove('contact__right--active');
+        overlay.classList.remove('active');
+})

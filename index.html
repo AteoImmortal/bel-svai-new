@@ -29,8 +29,9 @@
     <title>Свайно-Винтовой Фундамент</title>
 </head>
 <body>
-
-    <nav class="nav" id="nav">
+    
+    
+    <nav class="nav " id="nav">
         <section class="container">
             <img src="./img/nav/logo.png" alt="logo" class="logo">
 
@@ -53,7 +54,10 @@
         </section>
     </nav>
     
-    <header class="header">
+    <header class="header ">
+        <section id="overlay"></section>
+        <img src="./img/header/header-fon.png" alt="fon">
+
         <section class="container">
             <h1>
                 Монтаж свайно-винтового фундамента под ключ
@@ -69,14 +73,33 @@
                 <b>Более 10 лет с вами!</b>
             </section>
 
-            <button class="btn-yellow">Оставить заявку</button>
+            
+            <button class="btn-yellow open-window">Оставить заявку</button>
+
+
+            <section class="contact__right contact__right--hidden">
+                <form action="./mail.php" method="post" id="form" class="contact__application">
+                    <label for="model" class="close">+</label>
+
+                    <h3>Оставить заявку</h3>
+                    <p>Заполните форму и наш менеджер свяжется<br>с вами в ближайшее время</p>
+                    
+                    <input type="text" name="user_name" class="input__name _req" type="text" placeholder="Ваше имя" required>
+                    <input type="text" name="user_phone" class="input__name _req" type="tel" placeholder="Телефон" required>
+        
+                    <button type="submit" class="btn-yellow">оставить заявку</button>
+        
+                    <p class="contact__tel">Наш телефон:</p>
+                    <a class="tel" href="tel:+375295186927">+375 (29) 518 69 27</a>
+                </form>
+            </section>
+
                 
         </section>
-        
-        <img src="./img/header/header-fon.png" alt="fon">
+
     </header>
 
-    <section class="about-us" id="about-us" >
+    <section class="about-us " id="about-us" >
         <a href="#nav"><img src="./img/scroll/scroll-up.png" alt="scroll-up" class="scroll-up"></a>
         <section class="container">
             <section class="about-us__row">
@@ -95,7 +118,7 @@
                         <p>Готовый фундамент за 1-2 дня. Быстро, качественно и надежно</p>
                         <p>Используем только качественные материалы</p>
                         <p>Опыт работы более 10 лет. Более 2000 довольных клиентов по всей Беларуси</p>
-                        <p>Гарантия соблюдения сроков (гарантия на фундамент 5 лет</p>
+                        <p>Гарантия соблюдения сроков (гарантия на фундамент 5 лет)</p>
                     </section>
                     <section class="about-us__right-bottom">
                         <h3>Скидка при количестве свай более 15 шт</h3>
@@ -120,7 +143,7 @@
         </section>
     </section>
 
-    <section class="types">
+    <section class="types ">
         <section class="container">
             <section class="types__row">
                 <section class="types__left">
@@ -169,7 +192,7 @@
         </section>
     </section> 
 
-    <section class="slider">
+    <section class="slider ">
         <button class="slider__left"><img src="./img/scroll/scroll-left.png" alt="scroll-left"></button>
         <button class="slider__right"><img src="./img/scroll/scroll-right.png" alt="scroll-right"></button>
         <section class="slider__photo">
@@ -186,7 +209,7 @@
         </section>
     </section>
 
-    <section class="dignities">
+    <section class="dignities ">
         <img src="./img/dignities/bel-svai.png" alt="bel-svai">
         <section class="container">
             <h3>Основные достоинства винтовых свай</h3>
@@ -227,7 +250,7 @@
         </section>
     </section>
 
-    <section class="process-work">
+    <section class="process-work ">
         <section class="container">
             <h2>Как мы работаем?</h2>
             <p>Стадии нашей работы от вашей заявки до готового фундамента</p>
@@ -267,7 +290,7 @@
         </section>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact " id="contact">
         <section class="container">
             <section class="contact__row">
                 <section class="contact__left">
@@ -299,18 +322,18 @@
                         
                         <input type="text" name="user_name" class="input__name _req" type="text" placeholder="Ваше имя" required>
                         <input type="text" name="user_phone" class="input__name _req" type="tel" placeholder="Телефон" required>
-    
+            
                         <button type="submit" class="btn-yellow">оставить заявку</button>
-    
-                        <label class="checkbox">
-                            <input type="checkbox" class="checkbox__real _req">
-                            <section class="checkbox__fake"></section>
-                            <section class="checkbox__text">
+            
+                        <section class="checkbox">
+                            <input class="checkbox__real" type="checkbox" id="model-real">
+                            <label for="model-real" class="checkbox__text">
                                 <p>Даю согласие на законную обработку персональных данных. <b>Правила обработки персональных данных</b></p>
-                            </section>
-                        </label>
+                            </label>
+                        </section>
                     </form>
                 </section>
+
             </section>
         </section>
     </section>
@@ -331,7 +354,7 @@
                     <li><a href="./index.html">Главная</a></li>
                 <li><a href="./index.html#about-us">О нас</a></li>
                 <li><a href="./our-works.html">Наши работы</a></li>
-                <li class="nav__item nav__item--active"><a href="./useful-information.html">Полезная информация</a></li>
+                <li class="nav__item nav__item"><a href="./useful-information.html">Полезная информация</a></li>
                 <li><a href="#contact">Контакты</a></li>
                 </ul>
             </section>
