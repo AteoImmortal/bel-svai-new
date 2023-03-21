@@ -1150,4 +1150,93 @@ a.tel {
   right: 60px;
 }
 
+.application-form {
+  width: 395px;
+  padding: 26px 24px 55px;
+  -webkit-box-align: center;
+          align-items: center;
+  text-align: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  background-color: #ffff;
+}
+.application-form h3 {
+  display: block;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+.application-form--hidden {
+  position: fixed;
+  padding-top: 40px;
+  margin: auto;
+  z-index: 12;
+  top: -100%;
+  left: calc( 50% - 196px);
+  transition: 0.7s all;
+}
+.application-form--active {
+  top: 100px;
+  left: calc( 50% - 196px);
+  z-index: 12;
+  transition: 0.7s all;
+}
+.application-form__application p:not(.checkbox__text p) {
+  display: block;
+  margin-bottom: 17px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: center;
+  color: #171715;
+}
+.application-form__application .input__name {
+  width: 344px;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  padding: 22px 25px;
+  opacity: 0.3;
+  border: 1px solid #151515;
+  border-radius: 4px;
+}
+.application-form__application .input__name:focus {
+  box-shadow: 0 0 15px #7a956b;
+}
+.application-form__application .input__name._error {
+  box-shadow: 0 0 15px red;
+}
+.application-form__application input:not(.checkbox__real) {
+  margin-top: 20px;
+}
+.application-form__application .btn-yellow {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 344px;
+}
+.application-form__application .checkbox {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.application-form__application .checkbox__text {
+  width: 283px;
+  margin-left: 12px;
+  font-size: 10px;
+  line-height: 1.2;
+  opacity: 0.6;
+}
+.application-form__application .checkbox__text b {
+  color: #FFD124;
+}
+.application-form__application .close {
+  position: absolute;
+  top: -15px;
+  right: 15px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  font-size: 45px;
+}
 /*# sourceMappingURL=main.css.map */

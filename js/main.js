@@ -91,17 +91,17 @@ document.querySelectorAll('[data-control="tab-questions"]').forEach(function(tab
 
 // Сделать заказ
 const openWindow = document.querySelector('.open-window');
-const makeOrder = document.querySelector('.contact__right--hidden');
+const makeOrder = document.querySelector('.application-form--hidden');
 const overlay = document.querySelector('#overlay');
 
 openWindow.addEventListener('click', function () {
-    makeOrder.classList.toggle('contact__right--active');
+    makeOrder.classList.toggle('application-form--active');
     overlay.classList.toggle('active');
 })
 
 const closeWindow = document.querySelector('.close');
 
 closeWindow.addEventListener('click', function (){
-        makeOrder.classList.remove('contact__right--active');
+        makeOrder.classList.remove('application-form--active');
         overlay.classList.remove('active');
 })

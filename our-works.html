@@ -52,6 +52,23 @@
         </section>
     </nav>
 
+    <section class="application-form application-form--hidden">
+        <form action="./mail.php" method="post" id="form" class="application-form__application">
+            <label for="model" class="close">+</label>
+
+            <h3>Оставить заявку</h3>
+            <p>Заполните форму и наш менеджер свяжется<br>с вами в ближайшее время</p>
+            
+            <input type="text" name="user_name" class="input__name _req" type="text" placeholder="Ваше имя" required>
+            <input type="text" name="user_phone" class="input__name _req" type="tel" placeholder="Телефон" required>
+
+            <button type="submit" class="btn-yellow">оставить заявку</button>
+
+            <p class="contact__tel">Наш телефон:</p>
+            <a class="tel" href="tel:+375295186927">+375 (29) 518 69 27</a>
+        </form>
+    </section>
+
     
     <section class="our-works">
         <a href="#nav"><img src="./img/scroll/scroll-up.png" alt="scroll-up" class="scroll-up"></a>
