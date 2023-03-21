@@ -681,65 +681,6 @@ h4 {
   z-index: 12;
   transition: 0.7s all;
 }
-.contact__application p:not(.checkbox__text p) {
-  display: block;
-  margin-bottom: 17px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.6;
-  text-align: center;
-  color: #171715;
-}
-.contact__application .input__name {
-  width: 344px;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-          align-items: center;
-  padding: 22px 25px;
-  opacity: 0.3;
-  border: 1px solid #151515;
-  border-radius: 4px;
-}
-.contact__application .input__name:focus {
-  box-shadow: 0 0 15px #7a956b;
-}
-.contact__application .input__name._error {
-  box-shadow: 0 0 15px red;
-}
-.contact__application input:not(.checkbox__real) {
-  margin-top: 20px;
-}
-.contact__application .btn-yellow {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 344px;
-}
-.contact__application .checkbox {
-  margin-top: 16px;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-}
-.contact__application .checkbox__text {
-  width: 283px;
-  margin-left: 12px;
-  font-size: 10px;
-  line-height: 1.2;
-  opacity: 0.6;
-}
-.contact__application .checkbox__text b {
-  color: #FFD124;
-}
-.contact__application .close {
-  position: absolute;
-  top: -15px;
-  right: 15px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  font-size: 45px;
-}
 .contact__content {
   margin-top: 80px;
 }
@@ -1239,4 +1180,9 @@ a.tel {
           transform: rotate(45deg);
   font-size: 45px;
 }
+.application-form__tel {
+  margin-top: 40px;
+  margin-bottom: 9px;
+}
+
 /*# sourceMappingURL=main.css.map */
