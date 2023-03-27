@@ -5,7 +5,7 @@
     background-color: #4C4B4A;
 
     h2{
-        padding-bottom: 18px;
+        margin-bottom: 18px;
         color: #FFD124;
     }
 
@@ -15,7 +15,7 @@
     }
 
     &__content{
-        padding-top: 159px;
+        margin-top: 159px;
 
         display: flex;
         flex-wrap: wrap;
@@ -24,7 +24,9 @@
     }
 
     &__blocks{
+        padding-left: 10px;
         width: 380px;
+        border-left: 2px solid #FFFFFF;
 
         h2{
             position: absolute;
@@ -51,6 +53,51 @@
         p{
             position: relative;
             z-index: 1;
+        }
+    }
+}
+
+@media(max-width: 899px){
+    .process-work{
+        padding-top: 60px;
+        padding-bottom: 45px;
+
+        h2{
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        p{
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        &__text{
+            display: block;
+            width: 380px;
+        }
+
+        &__content{
+            margin-top: 60px;
+        }
+
+        &__blocks{
+            width: 323px;
+
+            h2{
+                top: -100px;
+                
+                font-size: 130px;
+                line-height: 1.4;
+            }
+
+            b{
+                font-size: 14px;
+            }
+
+            a{
+                border-bottom: 2px solid #FFD124;
+            }
         }
     }
 }

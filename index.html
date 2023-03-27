@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Фавиконки -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/img/favicons/site.webmanifest">
-    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/img/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+        <!-- Фавиконки -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/img/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/img/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
 
-    <!-- SEO -->
-    <meta name="description" content="Профессиональное изготовление и установка свай «под ключ» для любых типов строений.">
-    <meta name="keywords" content="свайно-винтовой фундамент, фундамент, винтовые сваи, работа со сваями, bel-svai, бел сваи, высококлассных специалистов по работам с свайно-винтовым фундаментом">
-    
-    <link rel="stylesheet" href="./css/main.css">
+        <!-- SEO -->
+        <meta name="description" content="Профессиональное изготовление и установка свай «под ключ» для любых типов строений.">
+        <meta name="keywords" content="свайно-винтовой фундамент, фундамент, винтовые сваи, работа со сваями, bel-svai, бел сваи, высококлассных специалистов по работам с свайно-винтовым фундаментом">
+        
+        <link rel="stylesheet" href="./css/main.css">
 
-    <title>Свайно-Винтовой Фундамент</title>
-</head>
+        <title>Свайно-Винтовой Фундамент</title>
+    </head>
 <body>
     
     
@@ -51,11 +51,46 @@
                     <a href="tel:+375295186927">+375 (29) 518 69 27</a>
                 </section>
             </article>
+
+            <button><img class="nav__menu" src="./img/svg/menu-nav.svg" alt="nav"></button>
         </section>
+ 
     </nav>
     
+    <article id="overlayMobile"></article>
+    <section class="nav__mobile">
+        <ul class="nav__mobile-list">
+            <li class="nav__item nav__item--active"><a href="./index.html">Главная</a></li>
+            <li class="nav__item"><a href="#about-us">О нас</a></li>
+            <li class="nav__item"><a href="./our-works.html">Наши работы</a></li>
+            <li class="nav__item"><a href="./useful-information.html">Полезная информация</a></li>
+            <li class="nav__item"><a href="#contact">Контакты</a></li>
+        </ul>
+        <button><img class="nav__cross" src="./img/svg/cross.svg" alt="cross"></button>
+    </section>
+
+    <article id="overlay"></article>
+    
+    <article class="application-form application-form--hidden" id="applicationForm">
+        <form action="./send.php" method="post" class="application-form__application">
+            <input type="text" name="name" value="" class="d-none">
+            <label for="model" class="close">+</label>
+
+            <h3>Оставить заявку</h3>
+            <p>Заполните форму и наш менеджер свяжется<br>с вами в ближайшее время</p>
+            
+            <input type="text" name="fieldName" class="input__name _req" type="text" placeholder="Ваше имя" required>
+            <input type="text" name="fieldPhone" class="input__name _req" type="tel" placeholder="Телефон" id="maskPhoneHeader" required>
+
+            <button type="submit" class="btn-yellow" id="release">оставить заявку</button>
+
+            <p class="application-form__tel">Наш телефон:</p>
+            <a class="tel" href="tel:+375295186927">+375 (29) 518 69 27</a>
+        </form>
+    </article>
+    
     <header class="header ">
-        <section id="overlay"></section>
+        
         <img src="./img/header/header-fon.png" alt="fon">
 
         <section class="container">
@@ -75,26 +110,7 @@
 
             
             <button class="btn-yellow open-window">Оставить заявку</button>
-
-
-            <section class="application-form application-form--hidden">
-                <form action="./mail.php" method="post" id="form" class="application-form__application">
-                    <label for="model" class="close">+</label>
-
-                    <h3>Оставить заявку</h3>
-                    <p>Заполните форму и наш менеджер свяжется<br>с вами в ближайшее время</p>
-                    
-                    <input type="text" name="user_name" class="input__name _req" type="text" placeholder="Ваше имя" required>
-                    <input type="text" name="user_phone" class="input__name _req" type="tel" placeholder="Телефон" required>
-        
-                    <button type="submit" class="btn-yellow">оставить заявку</button>
-        
-                    <p class="application-form__tel">Наш телефон:</p>
-                    <a class="tel" href="tel:+375295186927">+375 (29) 518 69 27</a>
-                </form>
-            </section>
-
-                
+ 
         </section>
 
     </header>
@@ -125,6 +141,8 @@
                         <img class="about-us__discount" src="./img/svg/discount.svg" alt="discount">
                         <section class="about-us__right-bottom-block">
                             <b>Расчет стоимости</b>
+
+                            <p class="text-mobile">Заполните форму заявки и мы свяжемся с вами для расчета стоимости</p>
                             
                             <article class="connection">
                                 
@@ -253,7 +271,7 @@
     <section class="process-work ">
         <section class="container">
             <h2>Как мы работаем?</h2>
-            <p>Стадии нашей работы от вашей заявки до готового фундамента</p>
+            <p class="process-work__text">Стадии нашей работы от вашей заявки до готового фундамента</p>
 
             <section class="process-work__content">
                 <section class="process-work__blocks">
@@ -316,12 +334,13 @@
                 </section>
                 
                 <section class="application-form">
-                    <form action="./mail.php" method="post" id="form" class="application-form__application">
+                    <form action="./send.php" method="post" class="application-form__application">
                         <h4>Оставить заявку<br>на расчет стоимости</h4>
+                        <input type="text" name="name" value="" class="d-none">
                         <p>Заполните форму и наш менеджер свяжется<br>с вами в ближайшее время</p>
                         
-                        <input type="text" name="user_name" class="input__name _req" type="text" placeholder="Ваше имя" required>
-                        <input type="text" name="user_phone" class="input__name _req" type="tel" placeholder="Телефон" required>
+                        <input type="text" name="fieldName" class="input__name _req" type="text" placeholder="Ваше имя" required>
+                        <input type="text" name="fieldPhone" class="input__name _req" type="tel" placeholder="Телефон" id="maskPhoneContact" required>
             
                         <button type="submit" class="btn-yellow">оставить заявку</button>
             
@@ -338,7 +357,7 @@
         </section>
     </section>
 
-    <footer class="footer">
+    <footer class="footer ">
         <section class="container">
             <section class="footer__blocks--1">
             <img src="./img//footer/logo-white.png" alt="logo" class="logo">
@@ -351,11 +370,11 @@
             </section>
             <section class="footer__blocks--3">
                 <ul>
-                    <li><a href="./index.html">Главная</a></li>
-                <li><a href="./index.html#about-us">О нас</a></li>
-                <li><a href="./our-works.html">Наши работы</a></li>
-                <li class="nav__item nav__item"><a href="./useful-information.html">Полезная информация</a></li>
-                <li><a href="#contact">Контакты</a></li>
+                    <li class="nav__item"><a href="./index.html">Главная</a></li>
+                    <li class="nav__item"><a href="./index.html#about-us">О нас</a></li>
+                    <li class="nav__item"><a href="./our-works.html">Наши работы</a></li>
+                    <li class="nav__item"><a href="./useful-information.html">Полезная информация</a></li>
+                    <li class="nav__item"><a href="#contact">Контакты</a></li>
                 </ul>
             </section>
             <section class="footer__blocks--4">
@@ -378,6 +397,10 @@
         </section>
     </footer>
 
+    <script src="./libs/jquery/3.6.0/js/jquery-3.6.0.min.js"></script>
+    <script src="./libs/maskedinput/1.4.1/js/maskedinput.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/openWindow.js"></script>
 </body>
 </html>

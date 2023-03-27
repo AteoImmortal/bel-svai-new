@@ -62,46 +62,29 @@ document.querySelectorAll('[data-control="tab-questions"]').forEach(function(tab
 });
 
 
-// Слайдер
-(function (){
-    let offset = 0;
-    const sliderPhoto = document.querySelector('.slider__photo');
-
-    document.querySelector('.slider__right').addEventListener('click', function(){
-        offset = offset + 288;
-
-        if(offset > 1440){
-            offset = 0;
-        }
-
-        sliderPhoto.style.left = -offset + 'px';
-    });
-
-    document.querySelector('.slider__left').addEventListener('click', function(){
-        offset = offset - 288;
-
-        if(offset < 0){
-            offset = 1440;
-        }
-
-        sliderPhoto.style.left = -offset + 'px';
-    })
+// Маска телефона
+jQuery(function ($) {
+    $("#maskPhoneHeader").mask("+375 (99) 999-99-99");
+    $("#maskPhoneContact").mask("+375 (99) 999-99-99");
 });
 
 
-// Сделать заказ
-const openWindow = document.querySelector('.open-window');
-const makeOrder = document.querySelector('.application-form--hidden');
-const overlay = document.querySelector('#overlay');
+// Мобильная навигация
 
-openWindow.addEventListener('click', function () {
-    makeOrder.classList.toggle('application-form--active');
-    overlay.classList.toggle('active');
-})
+const navMenu = document.querySelector('.nav__menu');
+const overlayMobile = document.querySelector('#overlayMobile');
+const navMobile = document.querySelector('.nav__mobile');
+const navCross = document.querySelector('.nav__cross');
 
-const closeWindow = document.querySelector('.close');
+navMenu.addEventListener('click', function(){
+    overlayMobile.classList.toggle('overlay-mobile--active');
+    navMobile.classList.toggle('nav__mobile--active');
+    navCross.classList.toggle('nav__cross--active');
+});
 
-closeWindow.addEventListener('click', function (){
-        makeOrder.classList.remove('application-form--active');
-        overlay.classList.remove('active');
+navCross.addEventListener('click', function(){
+
+    overlayMobile.classList.remove('overlay-mobile--active');
+    navMobile.classList.remove('nav__mobile--active');
+    navCross.classList.remove('nav__cross--active');
 })

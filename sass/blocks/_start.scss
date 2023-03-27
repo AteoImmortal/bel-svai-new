@@ -2,6 +2,10 @@
     padding-top: 80px;
     padding-bottom: 112px;
 
+    z-index: 2;
+
+    background-color: #fff;
+
     &__up-blocks{
         margin-bottom: 112px;
 
@@ -62,5 +66,40 @@
         }
 
 
+    }
+}
+
+@media(max-width: 899px){
+    .start{
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        &__photo{
+            margin-left: -370px;
+        }
+
+        &__work{
+            margin-left: 270px;
+
+            h1{
+                font-size: 34px;
+            }
+
+            p{
+                font-size: 12px;
+                line-height: 1.4;
+            }
+        }
+
+        &__down-blocks{
+            h2{
+                font-size: 33px;
+            }
+
+            p{
+                font-size: 12px;
+                line-height: 1.4;
+            }
+        }
     }
 }

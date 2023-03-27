@@ -38,7 +38,7 @@
 }
     .btn-yellow{
         margin-top: 40px;
-
+        
         position: relative;
         display: inline-block;
         cursor: pointer;
@@ -92,3 +92,51 @@
         box-shadow: 0 0 0 2px #FFD124;
         transform: translate3d(0, 0, -1em);
     }
+    
+    @media(max-width: 899px){
+        
+        
+        .header{
+            padding-top: 60px;
+            overflow: hidden;
+
+            img{
+                position: absolute;
+                top: -29px;
+                right: -100px;
+            }
+
+        .container{
+            width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+
+            h1{
+                font-size: 34px;
+            }
+    
+            h2{
+                width: 290px;
+                margin-bottom: 104px;
+    
+                font-size: 16px;
+                line-height: 1.4;
+            }
+
+            p{
+                width: 250px;
+                font-size: 12px;
+                line-height: 1.4;
+            }
+            
+            b{
+                font-size: 14px;
+            }
+
+            .btn-yellow{
+                margin-top: 0;
+            }
+
+        }
+    }
+}

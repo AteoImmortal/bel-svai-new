@@ -136,3 +136,37 @@
         margin-top: 72px;
     }
 }
+
+@media(max-width: 899px){
+    .questions{
+        h2{
+            font-size: 30px;
+            line-height: 1.4;
+        }
+    
+        p{
+            width: 390px;
+
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        
+        
+        &__block &__tabs{
+            padding-bottom: 10px;
+            width: 300px;
+            
+            p{
+                width: 270px;
+            }
+        }
+
+        &__tabs{
+            button{
+                margin-left: 0;
+            }
+
+        }
+    }
+}

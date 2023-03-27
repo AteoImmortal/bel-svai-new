@@ -34,6 +34,15 @@
         font-weight: 600;
         border-bottom: 2px solid rgba(249, 195, 0, 0.5);
     }
+
+    &__menu{
+        display: none;
+    }
+
+    &__mobile{
+        display: none;
+    }
+
 }
 
 .connection{
@@ -48,9 +57,9 @@
     }
 
     a{
-        
         border-bottom: 2px solid #FFD124;
     }
+
 }
 
 .connect{
@@ -60,4 +69,103 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
+}
+
+@media(max-width: 899px){
+
+    
+    .nav{
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .container{
+            width: 700px;
+            justify-content: start;
+        }
+        
+        .connection{
+            margin-left: auto;
+            margin-right: 70px;
+        }
+        
+        &__list{
+            display: none;
+        }
+
+        &__menu{
+            display: block;
+        }
+
+        &__mobile{
+            padding: 30px 15px 40px;
+            margin-left: auto;
+            
+            display: block;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 250px;
+            height: 100%;
+
+            z-index: 100;
+
+            &--active {
+                width: 320px;
+                display: -webkit-box;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                right: 0;
+                opacity: 1;
+                transition: right .3s linear, opacity .2s ease-in;
+                background-color: #ffffff;
+
+                .nav__item{
+                    display: block;
+                }
+                .nav__item:not(:first-child){
+                    margin-top: 30px;
+                }
+                .nav__item--active{
+                    display: inline-block;
+                }
+            }
+        }
+
+        &__cross{
+            display: none;
+            position: absolute;
+            top: 24px;
+            right: 48px;
+
+            width: 24px;
+            height: 24px;
+
+            &--active{
+                display: block;
+            }
+        }
+
+
+    }
+
+    .connect a{
+        font-size: 16px;
+    }
+    
+}
+
+#overlayMobile{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 11;
+    background: rgba(37, 73, 116, 0.8);
+}
+
+#overlayMobile.overlay-mobile--active{
+    display: block;
 }

@@ -29,13 +29,13 @@
     </head>
 <body>
     
-    <nav class="nav" id="nav">
+    <nav class="nav " id="nav">
         <section class="container">
             <img src="./img/nav/logo.png" alt="logo" class="logo">
 
             <ul class="nav__list">
                 <li class="nav__item"><a href="./index.html">Главная</a></li>
-                <li class="nav__item"><a href="./index.html#about-us">О нас</a></li>
+                <li class="nav__item"><a href="#about-us">О нас</a></li>
                 <li class="nav__item"><a href="./our-works.html">Наши работы</a></li>
                 <li class="nav__item nav__item--active"><a href="./useful-information.html">Полезная информация</a></li>
                 <li class="nav__item"><a href="#contact">Контакты</a></li>
@@ -49,8 +49,22 @@
                     <a href="tel:+375295186927">+375 (29) 518 69 27</a>
                 </section>
             </article>
+
+            <button><img class="nav__menu" src="./img/svg/menu-nav.svg" alt="nav"></button>
         </section>
+ 
     </nav>
+    <article id="overlayMobile"></article>
+    <section class="nav__mobile">
+        <ul class="nav__mobile-list">
+            <li class="nav__item"><a href="./index.html">Главная</a></li>
+            <li class="nav__item"><a href="#about-us">О нас</a></li>
+            <li class="nav__item"><a href="./our-works.html">Наши работы</a></li>
+            <li class="nav__item nav__item--active"><a href="./useful-information.html">Полезная информация</a></li>
+            <li class="nav__item"><a href="#contact">Контакты</a></li>
+        </ul>
+        <button><img class="nav__cross" src="./img/svg/cross.svg" alt="cross"></button>
+    </section>
 
     <section class="start">
         <section class="container">
@@ -92,6 +106,7 @@
 
     <section class="questions">
         <section class="container">
+            <a href="#nav"><img src="./img/scroll/scroll-up.png" alt="scroll-up" class="scroll-up"></a>
 
             
             <section class="questions__left-block">
@@ -225,7 +240,7 @@
         </section>
     </section>
 
-    <section class="contact " id="contact">
+    <section class="contact" id="contact">
         <section class="container">
             <section class="contact__row">
                 <section class="contact__left">
@@ -250,19 +265,20 @@
                     </section>
                 </section>
                 
-                <section class="contact__right">
-                    <form action="./mail.php" method="post" id="form" class="contact__application">
+                <section class="application-form">
+                    <form action="./send.php" method="post" class="application-form__application">
                         <h4>Оставить заявку<br>на расчет стоимости</h4>
+                        <input type="text" name="name" value="" class="d-none">
                         <p>Заполните форму и наш менеджер свяжется<br>с вами в ближайшее время</p>
                         
-                        <input type="text" name="user_name" class="input__name _req" type="text" placeholder="Ваше имя" required>
-                        <input type="text" name="user_phone" class="input__name _req" type="tel" placeholder="Телефон" required>
+                        <input type="text" name="fieldName" class="input__name _req" type="text" placeholder="Ваше имя" required>
+                        <input type="text" name="fieldPhone" class="input__name _req" type="tel" placeholder="Телефон" id="maskPhoneContact" required>
             
                         <button type="submit" class="btn-yellow">оставить заявку</button>
             
                         <section class="checkbox">
-                            <input class="checkbox__real" type="checkbox" id="model">
-                            <label for="model" class="checkbox__text">
+                            <input class="checkbox__real" type="checkbox" id="model-real">
+                            <label for="model-real" class="checkbox__text">
                                 <p>Даю согласие на законную обработку персональных данных. <b>Правила обработки персональных данных</b></p>
                             </label>
                         </section>
@@ -273,7 +289,7 @@
         </section>
     </section>
 
-    <footer class="footer">
+    <footer class="footer ">
         <section class="container">
             <section class="footer__blocks--1">
             <img src="./img//footer/logo-white.png" alt="logo" class="logo">
@@ -286,11 +302,11 @@
             </section>
             <section class="footer__blocks--3">
                 <ul>
-                    <li><a href="./index.html">Главная</a></li>
-                <li><a href="./index.html#about-us">О нас</a></li>
-                <li><a href="./our-works.html">Наши работы</a></li>
-                <li class="nav__item nav__item"><a href="./useful-information.html">Полезная информация</a></li>
-                <li><a href="#contact">Контакты</a></li>
+                    <li class="nav__item"><a href="./index.html">Главная</a></li>
+                    <li class="nav__item"><a href="./index.html#about-us">О нас</a></li>
+                    <li class="nav__item"><a href="./our-works.html">Наши работы</a></li>
+                    <li class="nav__item"><a href="./useful-information.html">Полезная информация</a></li>
+                    <li class="nav__item"><a href="#contact">Контакты</a></li>
                 </ul>
             </section>
             <section class="footer__blocks--4">
@@ -313,7 +329,8 @@
         </section>
     </footer>
 
+    <script src="./libs/jquery/3.6.0/js/jquery-3.6.0.min.js"></script>
+    <script src="./libs/maskedinput/1.4.1/js/maskedinput.js"></script>
     <script src="./js/main.js"></script>
-
 </body>
 </html>
