@@ -179,8 +179,25 @@
             justify-content: space-between;
         }
 
+        .logo{
+            width: auto;
+        }
+
         .connection{
-            display: none;
+
+            margin-right: 30px;
+            // margin-left: 0;
+            p{
+                display: none;
+            }
+
+            img{
+                display: none;
+            }
+
+            a{
+                border-bottom: none;
+            }
         }
     }
 }

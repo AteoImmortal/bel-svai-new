@@ -357,8 +357,20 @@ h4 {
     -webkit-box-pack: justify;
             justify-content: space-between;
   }
+  .nav .logo {
+    width: auto;
+  }
   .nav .connection {
+    margin-right: 30px;
+  }
+  .nav .connection p {
     display: none;
+  }
+  .nav .connection img {
+    display: none;
+  }
+  .nav .connection a {
+    border-bottom: none;
   }
 }
 .header {
@@ -521,7 +533,7 @@ h4 {
 .about-us {
   padding-top: 112px;
   padding-bottom: 115px;
-  background: linear-gradient(302.61deg, #41413D 22.56%, rgba(65, 65, 61, 0) 37.96%), linear-gradient(0deg, rgba(65, 65, 61, 0.8), rgba(65, 65, 61, 0.8)), url(./../../img/about-us/fon.jpg);
+  background: linear-gradient(302.61deg, #41413D 22.56%, rgba(65, 65, 61, 0) 37.96%), linear-gradient(0deg, rgba(65, 65, 61, 0.8), rgba(65, 65, 61, 0.8)), url(../img/about-us/fon.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
