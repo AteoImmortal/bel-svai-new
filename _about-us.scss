@@ -1,0 +1,328 @@
+.about-us{
+    padding-top: 112px;
+    padding-bottom: 115px;
+
+    background: linear-gradient(302.61deg, #41413D 22.56%, rgba(65, 65, 61, 0) 37.96%), linear-gradient(0deg, rgba(65, 65, 61, 0.8), rgba(65, 65, 61, 0.8)), url(../img/about-us/fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    h2{
+        color: #FFD124;
+    }
+    
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    h3{
+        color: #FFD124;
+    }
+    
+    &__left{
+        
+        h3{
+            display: block;
+            width: 270px;
+            margin-top: auto;
+            margin-left: auto;
+    
+            text-align: right;
+        }
+
+        p{
+            display: block;
+            width: 480px;
+            margin-right: 79px;
+        }
+    }
+    
+    &__left-text{
+        margin-top: 20px;
+        margin-bottom: 255px;
+    }
+
+    p{
+        font-weight: 500;
+        font-size: 14px;
+
+        color: #FFFFFF;
+    }
+
+    &__right{
+        padding-top: 18px;
+
+        &-content{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 41px;
+            row-gap: 48px;
+            margin-top: 56px;
+            margin-bottom: 170px;
+
+            p{
+                display: block;
+                align-self: start;
+                padding-left: 10px;
+                width: 265px; 
+
+                border-left: 2px solid rgba(255, 255, 255, 0.2);
+            }
+        }
+
+        &-bottom{
+            padding-left: 10px;
+
+            display: flex;
+            position: relative;
+
+            text-align: right;
+            h3{
+                width: 260px;
+            }
+
+            .about-us__discount{
+                width: 173px;
+                height: 150px;
+
+                position: absolute;
+                top: -60px;
+                left: -80px;
+            }
+
+            &-block{
+                margin-left: 40px;
+                
+                border-left: 2px solid rgba(255, 255, 255, 0.2);
+
+                b{
+                    color: #FFD124;
+                }
+
+                p{
+                    display: block;
+                    padding-top: 10px;
+                    width: 227px;
+                }
+
+                p.text-mobile{
+                    display: none;
+                }
+
+                .connection{
+                    margin-top: 10px;
+                    border-bottom: none;
+
+                    p{
+                        color: #FFFFFF;
+                    }
+                }
+
+                .connect{
+                    img{
+                        margin-left: auto;
+                    }
+                    a{
+                        color: #FFFFFF;
+                    }
+                }
+            }
+            &-block:last-child{
+                text-align: right;
+            }
+        }
+    }
+
+}
+
+.scroll-up{
+    z-index: 1;
+    position: fixed;
+
+    bottom: 170px;
+    right: 90px;
+    border-radius: 50%;
+
+    @media(max-width:700px){
+        display: none;
+    }
+}
+
+.scroll-up:hover{
+    background-color: #FFD124;
+}
+
+
+
+@media(max-width: 899px){
+    .container{
+        width: 700px;
+    }
+
+    .about-us{
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        &__row{
+            display: block;
+
+            h2{
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            p{
+                font-size: 12px;
+                line-height: 1.4;
+            }
+        }
+
+        &__left-text{
+            margin-bottom: 77px;
+        }
+
+        h3{
+            margin-bottom: 40px;
+
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.4;
+            display: block;
+        }
+
+        &__right{
+            padding-top: 0;
+    
+            &-content{
+                margin-top: 0;
+                margin-bottom: 70px;
+            }
+
+            &-bottom{
+                .about-us__discount{
+                    width: 100px;
+                    height: 100px;
+                    top: -5px;
+                    left: 190px;
+                }
+
+                &-block{
+                    b{
+                        font-size: 14px;
+                    }
+
+                    p.text-mobile{
+                        display: block;
+                    }
+
+                    .connection{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 700px){
+    .about-us{
+        padding-top: 44px;
+        padding-bottom: 70px;
+
+        &__row{
+            display: block;
+        }
+
+        &__left{
+            position: relative;
+            width: 330px;
+
+            text-align: center;
+
+            p{
+                width: 328px;
+
+                line-height: 1.6;
+            }
+
+            p:last-child{
+                width: 150px;
+
+                position: absolute;
+                top: 140px;
+                right: -55px;
+
+                font-size: 14px;
+                text-align: left;
+                color: #FFD124;
+            }
+        }
+
+        &__right{
+            position: relative;
+            padding-top: 90px;
+
+            h3{
+                width: 150px;
+
+                position: absolute;
+                top: -32px;
+                left: 0;
+                
+                line-height: 1.6;
+            }
+
+            &-content{
+                column-gap: 25px;
+                p{
+                    padding-left: 0;
+                    padding-top: 10px;
+                    
+                    width: 133px;
+                    border-left: 0;
+                    border-top: 2px solid #F9C500;
+
+                    font-size: 12px;
+                    line-height: 1.6;
+                }
+            }
+            
+            &-bottom{
+                text-align: left;
+
+                &-block:last-child{
+                    p, b{
+                        display: none;
+                    }
+                }
+
+                .connection{
+                    margin-left: 30px;
+                    margin-top: -30px;
+                
+                    display: block;
+
+                    a{
+                        font-size: 14px;
+                        line-height: 1.6;
+                    }
+
+                    p{
+                        display: block;
+
+                        font-size: 10px;
+                    }
+                }
+            }
+
+        }
+
+        .about-us__discount {
+            top: -65px;
+            left: 50px;
+        }
+
+    }
+}
