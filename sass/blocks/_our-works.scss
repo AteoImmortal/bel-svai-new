@@ -4,6 +4,10 @@
 
     position: relative;
 
+    h1{
+        text-transform: uppercase;
+    }
+
     &__row{
         margin-top: 20px;
         margin-bottom: 105px;
@@ -47,7 +51,7 @@
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
         border-radius: 8px;
         &-text{ 
-            margin: 20px 20px 0 20px;
+            margin: 20px;
 
             display: flex;
             justify-content: space-between;
@@ -72,4 +76,79 @@
         }
     }
 
+}
+
+@media(max-width: 899px){
+
+    
+    .our-works{
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        h1{
+            font-size: 24px;
+        }
+
+        &__row{
+            margin-top: 0;
+        }
+
+        .bel-svai{
+            width: 420px;
+            top: 160px;
+        }
+
+        &__card{
+            width: 330px;
+            min-height: 275px;
+
+            &-text{
+                .data{
+                    width: 67px;
+                }
+            }
+        }
+
+        &__card-list{
+            column-gap: 10px;
+        }
+    }
+}
+
+@media(max-width: 360px){
+
+    
+    .our-works{
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        h1{
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        &__row{
+            margin-bottom: 36px;
+
+            .btn-yellow{
+                display: none;
+            }
+        }
+
+        .bel-svai{
+            display: none;
+        }
+
+        &__card{
+            &-text{
+                .data{
+                    width: 68px;
+                }
+            }
+        }
+        
+        &__card-list{
+            row-gap: 40px;
+        }
+    }
 }

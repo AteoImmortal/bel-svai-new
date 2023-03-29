@@ -144,11 +144,17 @@
     bottom: 170px;
     right: 90px;
     border-radius: 50%;
+
+    @media(max-width:360px){
+        display: none;
+    }
 }
 
 .scroll-up:hover{
     background-color: #FFD124;
 }
+
+
 
 @media(max-width: 899px){
     .container{
@@ -181,7 +187,7 @@
             margin-bottom: 40px;
 
             font-weight: 500;
-            font-size: 12px;
+            font-size: 14px;
             line-height: 1.4;
             display: block;
         }
@@ -217,5 +223,106 @@
                 }
             }
         }
+    }
+}
+
+@media(max-width: 360px){
+    .about-us{
+        padding-top: 44px;
+        padding-bottom: 70px;
+
+        &__row{
+            display: block;
+        }
+
+        &__left{
+            position: relative;
+            width: 330px;
+
+            text-align: center;
+
+            p{
+                width: 328px;
+
+                line-height: 1.6;
+            }
+
+            p:last-child{
+                width: 150px;
+
+                position: absolute;
+                top: 140px;
+                right: -55px;
+
+                font-size: 14px;
+                text-align: left;
+                color: #FFD124;
+            }
+        }
+
+        &__right{
+            position: relative;
+            padding-top: 90px;
+
+            h3{
+                width: 150px;
+
+                position: absolute;
+                top: -32px;
+                left: 0;
+                
+                line-height: 1.6;
+            }
+
+            &-content{
+                column-gap: 25px;
+                p{
+                    padding-left: 0;
+                    padding-top: 10px;
+                    
+                    width: 133px;
+                    border-left: 0;
+                    border-top: 2px solid #F9C500;
+
+                    font-size: 12px;
+                    line-height: 1.6;
+                }
+            }
+            
+            &-bottom{
+                text-align: left;
+
+                &-block:last-child{
+                    p, b{
+                        display: none;
+                    }
+                }
+
+                .connection{
+                    margin-left: 30px;
+                    margin-top: -30px;
+                
+                    display: block;
+
+                    a{
+                        font-size: 14px;
+                        line-height: 1.6;
+                    }
+
+                    p{
+                        display: block;
+
+                        font-size: 10px;
+                    }
+                }
+            }
+
+        }
+
+        .about-us__discount {
+            top: -65px;
+            left: 50px;
+        }
+
     }
 }

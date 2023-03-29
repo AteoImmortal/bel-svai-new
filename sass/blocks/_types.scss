@@ -185,3 +185,52 @@
         }
     }
 }
+
+@media(max-width: 360px){
+    .types{
+        padding-top: 60px;
+        padding-bottom: 79px;
+
+        &__row{
+            display: block;
+        }
+
+        &__left{
+            margin-bottom: 60px;
+
+            text-align: center;
+
+            p{
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 40px;
+            }
+
+            .btn-yellow{
+                width: 280px;
+            }
+        }
+
+        &__right{
+            position: relative;
+            display: flex;
+
+            b{
+                display: block;
+                width: 280px;
+            }
+
+            &-columns:last-child{
+                width: 100px;
+
+                position: absolute;
+                top: 0;
+                left: 210px;
+
+                b{
+                    width: 70px;
+                }
+            }
+        }
+    }
+}

@@ -28,7 +28,7 @@
 
         p{
             margin-top: 30px;
-
+            width: 400px;
             display: block;
 
             font-weight: 500;
@@ -45,7 +45,7 @@
         width: 390px;
         
         h2{
-            padding-left: 10px;
+            margin-left: 10px;
 
             color: #FFD124;
         }
@@ -93,13 +93,76 @@
 
         &__down-blocks{
             h2{
-                font-size: 33px;
+                font-size: 40px;
             }
 
             p{
                 font-size: 12px;
                 line-height: 1.4;
             }
+        }
+    }
+}
+
+@media(max-width: 360px){
+    .start{
+        padding-top: 4px;
+        padding-bottom: 30px;
+        overflow: hidden;
+
+        &__work{
+            margin-top: 10px;
+            margin-left: 0;
+            width: 300px;
+
+            h1{
+                width: 250px;
+                display: block;
+
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            p{
+                margin-top: 20px;
+                width: 320px;
+
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        }
+
+        &__up-blocks{
+            margin-bottom: 70px;
+            display: block;
+        }
+
+        &__photo{
+            margin-left: -55px;
+
+            img{
+                height: 90px;
+            }
+        }
+
+        &__down-blocks{
+            display: block;
+        }
+
+        &__down-block{
+            width: 280px;
+
+            h2{
+                margin-left: 245px;
+                margin-bottom: -20px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+
+        &__down-block:not(:first-child){
+            margin-top: 10px;
         }
     }
 }

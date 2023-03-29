@@ -136,3 +136,49 @@
         }
     }
 }
+
+@media(max-width: 360px){
+    .footer{
+        .container{
+            flex-wrap: wrap;
+        }
+
+        .footer__blocks--1{
+            order: 3;
+            .logo{
+                margin-bottom: 8px;
+            }
+        }
+
+        .footer__blocks--2{
+            margin-top: 33px;
+            order: 4;
+            width: 125px;
+            
+            p:last-child{
+                display: none;
+            }
+
+            .white{
+                margin-bottom: 10px;
+                width: 117px;
+            }
+            .time{
+                margin-bottom: 10px;
+            }
+        }
+
+        &__blocks--3{
+            width: 125px;
+            order: 2;
+        }
+
+        &__blocks--4{
+            margin-bottom: 30px;
+            width: 125px;
+
+            display: block;
+            order: 1;
+        }
+    }
+}

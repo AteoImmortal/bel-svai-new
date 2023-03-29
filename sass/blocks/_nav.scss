@@ -169,3 +169,18 @@
 #overlayMobile.overlay-mobile--active{
     display: block;
 }
+
+@media(max-width: 360px){
+    .nav{
+        .container{
+            width: 330px;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: space-between;
+        }
+
+        .connection{
+            display: none;
+        }
+    }
+}

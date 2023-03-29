@@ -66,3 +66,29 @@
         }
     }
 }
+
+@media(max-width: 360px){
+    .dignities{
+        text-align: center;
+
+        img{
+            display: none;
+        }
+
+        p{
+            width: 280px;
+        }
+
+        p:not(:first-child){
+            font-weight: 700;
+        }
+
+        &__content{
+            row-gap: 20px;
+        }
+
+        &__text{
+           min-height: 45px;
+        }
+    }
+}

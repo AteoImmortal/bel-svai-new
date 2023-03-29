@@ -118,3 +118,26 @@ a.tel{
         }
     }
 }
+
+@media(max-width: 360px){
+    .contact{
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        &__row{
+            display: block;
+        }
+
+        &__left{
+            text-align: center;
+        }
+
+        &__connect{
+            margin-bottom: 60px;
+            .connect{
+                justify-content: center;
+                
+            }
+        }
+    }
+}

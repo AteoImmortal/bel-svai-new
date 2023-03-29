@@ -101,3 +101,17 @@
         }
     }
 }
+
+@media(max-width: 360px){
+    .process-work{
+
+        &__text{
+            width: 280px;
+        }
+        &__content{
+            row-gap: 60px;
+        }
+
+    }
+
+}

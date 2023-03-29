@@ -38,3 +38,25 @@
         width: 700px;
     }
 }
+
+@media(max-width: 360px){
+    .slider{
+        width: 360px;
+
+        &__left{
+            width: 40px;
+
+            top: 64px;
+            left: 20px;
+        }
+
+        &__right{
+            width: 40px;
+
+            top: 64px;
+            right: 20px;
+        }
+
+        
+    }
+}

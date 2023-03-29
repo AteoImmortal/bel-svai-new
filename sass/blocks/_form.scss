@@ -154,3 +154,26 @@
         }
     }
 }
+
+@media(max-width: 360px){
+    .application-form{
+        padding: 10px;
+
+        left: calc( 50% - 150px);
+
+        width: 300px;
+
+        .btn-yellow{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 250px;
+        }
+    }
+
+    .application-form__application .input__name{
+        width: 250px;
+    }
+    .application-form p:last-child{
+        font-size: 9px;
+    }
+}

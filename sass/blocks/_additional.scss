@@ -19,10 +19,6 @@
 
         color: #171715;
 
-        &-content{
-
-        }
-
         .questions__first-text{   
             display: block;
         }
@@ -73,6 +69,21 @@
 
         .questions__block .questions__tabs p{
             width: auto;
+        }
+    }
+}
+
+@media(max-width: 360px){
+    .additional{
+        padding-top: 50px;
+        .questions__block .questions__tabs{
+            width: 300px;
+            p{
+                width: 270px;
+            }
+        } 
+        .questions__tabs:not(:first-child) {
+            margin-top: 20px;
         }
     }
 }

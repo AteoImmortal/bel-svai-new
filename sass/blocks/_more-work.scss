@@ -23,3 +23,49 @@
         }
     }
 }
+
+@media(max-width: 899px){
+    .more-work{
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        h2{
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &__row{
+            margin-top: 0;
+
+            p{
+                width: 340px;
+            }
+        }
+    }
+}
+
+@media(max-width: 360px){
+    .container{
+        width: 330px;
+    }
+    .more-work{
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        text-align: center;
+
+        &__row{
+            display: block;
+
+            p{
+                margin-top: 20px;
+                display: block;
+                width: 310px;
+            }
+
+            .btn-yellow{
+                width: 280px;
+            }
+        }
+    }
+}
