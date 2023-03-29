@@ -145,7 +145,7 @@
     right: 90px;
     border-radius: 50%;
 
-    @media(max-width:360px){
+    @media(max-width:700px){
         display: none;
     }
 }
@@ -226,7 +226,7 @@
     }
 }
 
-@media(max-width: 360px){
+@media(max-width: 700px){
     .about-us{
         padding-top: 44px;
         padding-bottom: 70px;
